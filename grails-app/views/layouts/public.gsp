@@ -58,7 +58,7 @@ Released   : 20120818
                 <img src="${resource(dir: 'images/family', file:'DSC_1057.JPG')}" width="145" height="145" />
                 <img src="${resource(dir: 'images/family', file:'DSC_0672.JPG')}" width="145" height="145" />
                 <img src="${resource(dir: 'images/family', file:'DSC_0366.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0667.png')}" width="145" height="145" />
+                <img src="${resource(dir: 'images/family', file:'IMG_0101.png')}" width="145" height="145" />
                 <img src="${resource(dir: 'images/family', file:'photo-5-4.jpeg')}" width="145" height="145" />
                 <img src="${resource(dir: 'images/family', file:'DSC_0154.JPG')}" width="145" height="145" />
 			</div>
