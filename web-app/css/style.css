@@ -79,7 +79,7 @@ a:hover {
 #banner {
 	overflow: hidden;
 	height: 400px;
-	background: url(../images/img04.jpg) no-repeat center bottom;
+	background: url(../images/img04.png) no-repeat center bottom;
 }
 
 #banner .image-style {
@@ -456,7 +456,7 @@ a:hover {
 .box1 {
 	overflow: hidden;
 	height: 300px;
-	background: url(../images/img04.jpg) no-repeat center bottom;
+	background: url(../images/img04.png) no-repeat center bottom;
 }
 
 .list-style1 {
