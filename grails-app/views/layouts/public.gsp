@@ -27,21 +27,21 @@ Released   : 20120818
 <div id="wrapper">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="#">Home</a></li>
-			<li><a href="#">Family</a></li>
+			<li class="current_page_item"><a href="${resource(dir:'')}">Home</a></li>
+			<li><g:link controller="home" action="family">Family</g:link></li>
 			<li><a href="http://blog.inkleinations.com">Blog</a></li>
-			<li><a href="#">Publishing</a></li>
+			<li><g:link controller="publication" action="publishing">Publishing</g:link></li>
 			<li><a href="#">Audio</a></li>
 			<li><a href="#">Links</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><g:link controller="home" action="contact">Contact</g:link></li>
 		</ul>
 	</div>
 	<div id="logo" class="container">
-		<h1><a href="#">inKLEINations </a></h1>
+		<h1><a href="#"><section:content for="header" /> </a></h1>
         <p><section:content for="subheader" /></p>
 	</div>
 	<div id="page" class="container">
-		<div id="banner"><img src="${resource(dir: 'images', file:'DSC_0059-2-rect.png')}" width="959" height="380" alt="" /></div>
+		<div id="banner"><section:image for="headerimage" width="959" height="380" alt="" /></div>
 		<div id="content">
             <g:layoutBody />
 			<div style="clear: both;">&nbsp;</div>
@@ -49,19 +49,20 @@ Released   : 20120818
 		<!-- end #content -->
 		<div id="sidebar">
 			<div>
-                <img src="${resource(dir: 'images/family', file:'IMG_9351.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_1341.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0082.jpeg')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_2056.jpeg')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0239.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'0171.JPG')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_1057.JPG')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0672.JPG')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0366.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'IMG_0101.png')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'photo-5-4.jpeg')}" width="145" height="145" />
-                <img src="${resource(dir: 'images/family', file:'DSC_0154.JPG')}" width="145" height="145" />
+                <section:image for="sidebar1image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar2image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar3image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar4image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar5image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar6image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar7image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar8image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar9image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar10image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar11image" dir="family" width="145" height="145" alt="" />
+                <section:image for="sidebar12image" dir="family" width="145" height="145" alt="" />
 			</div>
+            <p>&nbsp;</p>
 		</div>
 		<!-- end #sidebar -->
 		<div style="clear: both;">&nbsp;</div>
@@ -70,31 +71,28 @@ Released   : 20120818
 	<div id="three-column" class="container">
 		<div id="tbox1">
 			<div class="box-style">
-				<div class="image"><img src="${resource(dir: 'images', file:'img07.jpg')}" width="320" height="170" alt="" /></div>
+                <div class="image"><section:image for="link1image" dir="family" width="320" height="170" alt="" /></div>
 				<div class="arrow"></div>
 				<div class="content">
-					<h2>Fusce ultrices fringilla</h2>
-					<p>Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. </p>
+                    <section:content for="link1text" />
 				</div>
 			</div>
 		</div>
 		<div id="tbox2">
 			<div class="box-style">
-				<div class="image"><img src="${resource(dir: 'images', file:'img08.jpg')}" width="320" height="170" alt="" /></div>
+                <div class="image"><section:image for="link2image" dir="family" width="320" height="170" alt="" /></div>
 				<div class="arrow"></div>
 				<div class="content">
-					<h2>Mauris vulputate dolor</h2>
-					<p>Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. </p>
+                    <section:content for="link2text" />
 				</div>
 			</div>
 		</div>
 		<div id="tbox3">
 			<div class="box-style">
-				<div class="image"><img src="${resource(dir: 'images', file: 'img09.jpg')}" width="320" height="170" alt="" /></div>
+                <div class="image"><section:image for="link3image" dir="family" width="320" height="170" alt="" /></div>
 				<div class="arrow"></div>
 				<div class="content">
-					<h2>Nulla luctus eleifend </h2>
-					<p>Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh.</p>
+                    <section:content for="link3text" />
 				</div>
 			</div>
 		</div>
@@ -103,34 +101,18 @@ Released   : 20120818
 <div id="footer-content" class="container">
 	<div id="footer-bg">
 		<div id="column1">
-			<h2>Welcome to my website</h2>
-			<p>In posuere eleifend odio quisque semper augue mattis wisi maecenas ligula. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum integer nisl risus, sagittis convallis, rutrum id, congue, and nibh. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus.<br />
-			</p>
+            <section:content for="footer1text" />
 		</div>
 		<div id="column2">
-			<h2>Etiam rhoncus volutpat</h2>
-			<ul class="list-style2">
-				<li class="first"><a href="#">Pellentesque quis elit non lectus gravida blandit.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-				<li><a href="#">Phasellus nec erat sit amet nibh pellentesque congue.</a></li>
-				<li><a href="#">Cras vitae metus aliquam risus pellentesque pharetra.</a></li>
-				<li><a href="#">Maecenas vitae orci vitae tellus feugiat eleifend.</a></li>
-			</ul>
+            <section:content for="footer2text" />
 		</div>
 		<div id="column3">
-			<h2>Recommended Links</h2>
-			<ul class="list-style2">
-				<li class="first"><a href="#">Pellentesque quis elit non lectus gravida blandit.</a></li>
-				<li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-				<li><a href="#">Phasellus nec erat sit amet nibh pellentesque congue.</a></li>
-				<li><a href="#">Cras vitae metus aliquam risus pellentesque pharetra.</a></li>
-				<li><a href="#">Maecenas vitae orci vitae tellus feugiat eleifend.</a></li>
-			</ul>
+            <section:content for="footer3text" />
 		</div>
 	</div>
 </div>
 <div id="footer">
-	<p>© 2012 Untitled Inc. All rights reserved. Lorem ipsum dolor sit amet nullam blandit consequat phasellus etiam lorem. Design by <a href="http://www.freecsstemplates.org">FCT</a>.  Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+    <section:content for="footer4text" />
 </div>
 <!-- end #footer -->
 <div class="footer" role="contentinfo"></div>
