@@ -553,3 +553,13 @@ a:hover {
 	width: 280px;
 	padding: 20px;
 }
+
+img.thumbnail {
+    margin-right: 14px;
+}
+
+tr.pub > td {
+    padding-bottom: 20px;
+}
+
+
