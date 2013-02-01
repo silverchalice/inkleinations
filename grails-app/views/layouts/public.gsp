@@ -31,8 +31,8 @@ Released   : 20120818
 			<li><g:link controller="home" action="family">About Us</g:link></li>
 			<li><a href="http://blog.inkleinations.com">Blog</a></li>
 			<li><g:link controller="publication" action="publishing">Publishing</g:link></li>
-			<li><a href="#">Audio</a></li>
-			<li><a href="#">Links</a></li>
+			<li><g:link controller="home" action="audio">Audio</g:link></li>
+			<li><g:link controller="home" action="links">Links</g:link></li>
 			<li><g:link controller="home" action="contact">Contact</g:link></li>
 		</ul>
 	</div>
