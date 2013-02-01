@@ -11,8 +11,7 @@ class SectionController {
     }
 
     def list() {
-        params.max = Math.min(params.max ? params.int('max') : 10, 100)
-        [sectionInstanceList: Section.list(params), sectionInstanceTotal: Section.count()]
+        [sectionInstanceList: Section.list(params)]
     }
 
     def create() {
