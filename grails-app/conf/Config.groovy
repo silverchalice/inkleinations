@@ -29,6 +29,26 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
                     ]
 grails.app.context = '/'
 
+grails.plugins.springsecurity.securityConfigType = "InterceptUrlMap"
+
+grails.plugins.springsecurity.interceptUrlMap = [
+   '/':             ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/about-us':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/publishing':   ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/audio':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/links':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/contact':      ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/audio/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/pdf/**':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/js/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/css/**':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/images/**':    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/*':            ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/login/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/logout/**':    ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/**':           ['ROLE_ADMIN']
+]
+
 images.location = "web-app/images/family"
 
 // URL Mapping Cache Max Size, defaults to 5000
@@ -94,3 +114,8 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.inkleinations.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.inkleinations.UserRole'
+grails.plugins.springsecurity.authority.className = 'com.inkleinations.Role'

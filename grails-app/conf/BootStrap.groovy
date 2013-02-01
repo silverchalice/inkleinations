@@ -3,6 +3,13 @@ import com.inkleinations.*
 class BootStrap {
 
     def init = { servletContext ->
+        def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true, failOnError:true)
+
+        def adminUser = new User(username: 'admini', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, password: 'password')
+        adminUser.save(flush: true, failOnError:true)
+
+        UserRole.create adminUser, adminRole, true
+
         if(!Section.findByName("subheader")){
             new Section(name:"header", html:"inKLEINations").save(failOnError:true)
             new Section(name:"subheader", html:"Encouraging families to &#8220;seek first the kingdom of God&#8230;&#8221;").save(failOnError:true)
