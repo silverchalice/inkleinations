@@ -6,7 +6,7 @@ class Section {
     String html
 
     static constraints = {
-        name blank: false, null: false
+        name blank: false, null: false, unique: true
         html blank: true, null: true
     }
 
