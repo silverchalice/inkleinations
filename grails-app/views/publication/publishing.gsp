@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="public"/>
-		<title>Welcome to inKLEINations</title>
+		<title>inKLEINations: Publishing</title>
     </head>
     <body>
         <section:content for="publishing" />
