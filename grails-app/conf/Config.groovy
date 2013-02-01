@@ -27,6 +27,7 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
                       form: 'application/x-www-form-urlencoded',
                       multipartForm: 'multipart/form-data'
                     ]
+grails.app.context = '/'
 
 images.location = "web-app/images/family"
 
