@@ -6,6 +6,14 @@ class HomeController {
 
     def family() { }
 
+    def audio() {
+        [audiobookInstanceList : Audiobook.list(sort: "priority"),
+         talkInstanceList : Talk.list(sort: "priority"),
+         songInstanceList : Song.list(sort: "priority")]
+    }
+
+    def links() { }
+
     def contact() { }
 
 }
