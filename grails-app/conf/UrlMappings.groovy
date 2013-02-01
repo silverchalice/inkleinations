@@ -11,9 +11,17 @@ class UrlMappings {
             controller = "publication"
             action = "publishing"
         }
-        "/family"{
+        "/about-us"{
             controller = "home"
             action = "family"
+        }
+        "/audio"{
+            controller = "home"
+            action = "audio"
+        }
+        "/links"{
+            controller = "home"
+            action = "links"
         }
         "/contact"{
             controller = "home"
