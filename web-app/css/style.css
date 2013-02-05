@@ -234,8 +234,8 @@ a:hover {
 
 #content {
 	float: left;
-	width: 640px;
-	padding: 0px 0px 0px 0px;
+	width: 620px;
+	padding: 0px 20px 0px 0px;
     margin-right: 10px;
 }
 
@@ -387,14 +387,26 @@ a:hover {
 	margin-right: 20px;
 }
 
+#column1 a {
+	color: #8A8985;
+}
+
 #column2 {
 	float: left;
 	width: 320px;
 }
 
+#column2 a {
+	color: #8A8985;
+}
+
 #column3 {
 	float: right;
 	width: 320px;
+}
+
+#column3 a {
+	color: #8A8985;
 }
 
 /* Footer */
@@ -552,6 +564,10 @@ a:hover {
 	overflow: hidden;
 	width: 280px;
 	padding: 20px;
+}
+
+.box-style a {
+	color: #8A8985;
 }
 
 img.thumbnail {
