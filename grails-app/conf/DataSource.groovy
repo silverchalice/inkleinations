@@ -1,8 +1,8 @@
 dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    driverClassName = "com.mysql.jdbc.Driver"
+    username = "inkl"
+    password = "welovesourdatas...somanydatas"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -26,7 +26,7 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:mysql://127.0.0.1/inkleination"
             pooled = true
             properties {
                maxActive = -1
