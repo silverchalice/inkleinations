@@ -50,4 +50,11 @@
 	<g:field type="number" name="priority" required="" value="${talkInstance.priority}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: talkInstance, field: 'tags', 'error')} required">
+	<label for="tags">
+		<g:message code="talk.tags.label" default="Tags" />
+	</label>
+	<g:textField name="tags" value="${talkTags ?: ''}"/>
+</div>
+
 

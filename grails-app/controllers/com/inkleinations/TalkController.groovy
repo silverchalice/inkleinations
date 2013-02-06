@@ -22,6 +22,7 @@ class TalkController {
     def save() {
         def talkInstance = new Talk(params)
 		def talk = request.getFile('talk')
+        def tags = params.tags.split(", ") as List
         talkInstance.talkName = talk.getOriginalFilename()
         if (talk.empty || !talkInstance.save(flush: true)) {
             render(view: "create", model: [talkInstance: talkInstance])
@@ -30,6 +31,10 @@ class TalkController {
 
         new File('web-app/audio').mkdirs()
         talk.transferTo(new File('web-app/audio' + File.separatorChar + talk.getOriginalFilename()))								             			     	
+        talkInstance.setTags(tags)
+
+        talkInstance.save()
+
 		flash.message = message(code: 'default.created.message', args: [message(code: 'talk.label', default: 'Talk'), talkInstance.id])
         redirect(action: "show", id: talkInstance.id)
     }
@@ -53,11 +58,12 @@ class TalkController {
             return
         }
 
-        [talkInstance: talkInstance]
+        [talkInstance: talkInstance, talkTags: talkInstance.tags?.join(", ")]
     }
 
     def update() {
         def talkInstance = Talk.get(params.id)
+        def tags = params.tags.split(", ") as List
         if (!talkInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'talk.label', default: 'Talk'), params.id])
             redirect(action: "list")
@@ -76,11 +82,15 @@ class TalkController {
         }
 
         talkInstance.properties = params
+        talkInstance.tags = null
 
         if (!talkInstance.save(flush: true)) {
             render(view: "edit", model: [talkInstance: talkInstance])
             return
         }
+
+        talkInstance.setTags(tags)
+        talkInstance.save()
 
 		flash.message = message(code: 'default.updated.message', args: [message(code: 'talk.label', default: 'Talk'), talkInstance.id])
         redirect(action: "show", id: talkInstance.id)
