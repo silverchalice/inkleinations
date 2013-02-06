@@ -56,3 +56,11 @@
 	<g:field type="number" name="priority" required="" value="${audiobookInstance.priority}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: audiobookInstance, field: 'tags', 'error')} required">
+	<label for="tags">
+		<g:message code="audiobook.tags.label" default="Tags" />
+	</label>
+	<g:textField name="tags" value="${audiobookTags ?: ''}"/>
+</div>
+
+

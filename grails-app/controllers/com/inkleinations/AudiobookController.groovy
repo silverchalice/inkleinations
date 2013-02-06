@@ -22,6 +22,7 @@ class AudiobookController {
     def save() {
         def audiobookInstance = new Audiobook(params)
 		def audiobook = request.getFile('audiobook')
+        def tags = params.tags.split(", ") as List
         audiobookInstance.bookName = audiobook.getOriginalFilename()
         if (audiobook.empty || !audiobookInstance.save(flush: true)) {
             render(view: "create", model: [audiobookInstance: audiobookInstance])
@@ -30,6 +31,10 @@ class AudiobookController {
 
         new File('web-app/audio').mkdirs()
         audiobook.transferTo(new File('web-app/audio' + File.separatorChar + audiobook.getOriginalFilename()))								             			     	
+        audiobookInstance.setTags(tags)
+
+        audiobookInstance.save()
+
 		flash.message = message(code: 'default.created.message', args: [message(code: 'audiobook.label', default: 'Audiobook'), audiobookInstance.id])
         redirect(action: "show", id: audiobookInstance.id)
     }
@@ -53,11 +58,13 @@ class AudiobookController {
             return
         }
 
-        [audiobookInstance: audiobookInstance]
+        [audiobookInstance: audiobookInstance, audiobookTags: audiobookInstance.tags?.join(", ")]
+
     }
 
     def update() {
         def audiobookInstance = Audiobook.get(params.id)
+        def tags = params.tags.split(", ") as List
         if (!audiobookInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'audiobook.label', default: 'Audiobook'), params.id])
             redirect(action: "list")
@@ -76,11 +83,15 @@ class AudiobookController {
         }
 
         audiobookInstance.properties = params
+        audiobookInstance.tags = null
 
         if (!audiobookInstance.save(flush: true)) {
             render(view: "edit", model: [audiobookInstance: audiobookInstance])
             return
         }
+
+        audiobookInstance.setTags(tags)
+        audiobookInstance.save()
 
 		flash.message = message(code: 'default.updated.message', args: [message(code: 'audiobook.label', default: 'Audiobook'), audiobookInstance.id])
         redirect(action: "show", id: audiobookInstance.id)

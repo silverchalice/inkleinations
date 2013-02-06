@@ -77,6 +77,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${audiobookInstance?.tags}">
+				<li class="fieldcontain">
+					<span id="tags-label" class="property-label"><g:message code="audiobook.tags.label" default="Tags" /></span>
+					
+						<span class="property-value" aria-labelledby="tags-label"><g:fieldValue bean="${audiobookInstance}" field="tags"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
