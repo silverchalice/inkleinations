@@ -22,6 +22,7 @@ class SongController {
     def save() {
         def songInstance = new Song(params)
 		def song = request.getFile('song')
+        def tags = params.tags.split(", ") as List
         songInstance.songName = song.getOriginalFilename()
         if (song.empty || !songInstance.save(flush: true)) {
             render(view: "create", model: [songInstance: songInstance])
@@ -30,6 +31,10 @@ class SongController {
 
         new File('web-app/audio').mkdirs()
         song.transferTo(new File('web-app/audio' + File.separatorChar + song.getOriginalFilename()))								             			     	
+        songInstance.setTags(tags)
+
+        songInstance.save()
+
 		flash.message = message(code: 'default.created.message', args: [message(code: 'song.label', default: 'Song'), songInstance.id])
         redirect(action: "show", id: songInstance.id)
     }
@@ -53,11 +58,13 @@ class SongController {
             return
         }
 
-        [songInstance: songInstance]
+        [songInstance: songInstance, songTags: songInstance.tags?.join(", ")]
+
     }
 
     def update() {
         def songInstance = Song.get(params.id)
+        def tags = params.tags.split(", ") as List
         if (!songInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'song.label', default: 'Song'), params.id])
             redirect(action: "list")
@@ -76,11 +83,15 @@ class SongController {
         }
 
         songInstance.properties = params
+        songInstance.tags = null
 
         if (!songInstance.save(flush: true)) {
             render(view: "edit", model: [songInstance: songInstance])
             return
         }
+
+        songInstance.setTags(tags)
+        songInstance.save()
 
 		flash.message = message(code: 'default.updated.message', args: [message(code: 'song.label', default: 'Song'), songInstance.id])
         redirect(action: "show", id: songInstance.id)

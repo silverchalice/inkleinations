@@ -33,4 +33,10 @@
 	<g:textField name="time" value="${songInstance?.time}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: songInstance, field: 'tags', 'error')} required">
+	<label for="tags">
+		<g:message code="song.tags.label" default="Tags" />
+	</label>
+	<g:textField name="tags" value="${songTags ?: ''}"/>
+</div>
 
