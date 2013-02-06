@@ -1,6 +1,8 @@
 package com.inkleinations
 
-class Audiobook {
+import org.grails.taggable.*
+
+class Audiobook implements Taggable {
 
     String title
     String author

@@ -1,6 +1,8 @@
 package com.inkleinations
 
-class Song {
+import org.grails.taggable.*
+
+class Song implements Taggable {
 
     String title
     String time

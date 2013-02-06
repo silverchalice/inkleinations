@@ -1,6 +1,8 @@
 package com.inkleinations
 
-class Publication {
+import org.grails.taggable.*
+
+class Publication implements Taggable {
 
     String title
     String author

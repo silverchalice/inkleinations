@@ -1,6 +1,8 @@
 package com.inkleinations
 
-class Talk {
+import org.grails.taggable.*
+
+class Talk implements Taggable {
 
     String title
     String name
