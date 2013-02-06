@@ -98,6 +98,7 @@ Released   : 20120818
 		</div>
 	</div>
 </div>
+<a name="footer"></a> 
 <div id="footer-content" class="container">
 	<div id="footer-bg">
 		<div id="column1">
