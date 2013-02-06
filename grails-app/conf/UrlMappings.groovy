@@ -15,6 +15,10 @@ class UrlMappings {
             controller = "home"
             action = "family"
         }
+        "/faq"{
+            controller = "home"
+            action = "faq"
+        }
         "/audio"{
             controller = "home"
             action = "audio"
