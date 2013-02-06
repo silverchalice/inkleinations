@@ -23,6 +23,7 @@ class PublicationController {
         def publicationInstance = new Publication(params)
 		def image = request.getFile('image')
 		def pdf = request.getFile('pdf')
+        def tags = params.tags.split(", ") as List
         publicationInstance.imageName = image.getOriginalFilename()
         publicationInstance.pdfName = pdf.getOriginalFilename()
         if (image.empty || pdf.empty || !publicationInstance.save(flush: true)) {
@@ -34,6 +35,9 @@ class PublicationController {
         new File('web-app/pdf').mkdirs()
         image.transferTo(new File('web-app/images/covers' + File.separatorChar + image.getOriginalFilename()))								             			     	
         pdf.transferTo(new File('web-app/pdf' + File.separatorChar + pdf.getOriginalFilename()))								             			     	
+        publicationInstance.setTags(tags)
+
+        publicationInstance.save()
 
 		flash.message = message(code: 'default.created.message', args: [message(code: 'publication.label', default: 'Publication'), publicationInstance.id])
         redirect(action: "show", id: publicationInstance.id)
@@ -58,11 +62,12 @@ class PublicationController {
             return
         }
 
-        [publicationInstance: publicationInstance]
+        [publicationInstance: publicationInstance, publicationTags: publicationInstance.tags?.join(", ")]
     }
 
     def update() {
         def publicationInstance = Publication.get(params.id)
+        def tags = params.tags.split(", ") as List
         if (!publicationInstance) {
             flash.message = message(code: 'default.not.found.message', args: [message(code: 'publication.label', default: 'Publication'), params.id])
             redirect(action: "list")
@@ -81,11 +86,15 @@ class PublicationController {
         }
 
         publicationInstance.properties = params
+        publicationInstance.tags = null
 
         if (!publicationInstance.save(flush: true)) {
             render(view: "edit", model: [publicationInstance: publicationInstance])
             return
         }
+
+        publicationInstance.setTags(tags)
+        publicationInstance.save()
 
 		flash.message = message(code: 'default.updated.message', args: [message(code: 'publication.label', default: 'Publication'), publicationInstance.id])
         redirect(action: "show", id: publicationInstance.id)
@@ -113,4 +122,5 @@ class PublicationController {
     def publishing() {
         [publicationInstanceList: Publication.list(sort:"priority")]
     }
+
 }
