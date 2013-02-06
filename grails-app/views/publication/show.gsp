@@ -85,6 +85,15 @@
 					
 				</li>
 				</g:if>
+
+				<g:if test="${publicationInstance?.tags}">
+				<li class="fieldcontain">
+					<span id="tags-label" class="property-label"><g:message code="publication.tags.label" default="Tags" /></span>
+					
+						<span class="property-value" aria-labelledby="tags-label"><g:fieldValue bean="${publicationInstance}" field="tags"/></span>
+					
+				</li>
+				</g:if>
 			
 			</ol>
 			<g:form>

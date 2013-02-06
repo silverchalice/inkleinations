@@ -56,3 +56,10 @@
 	<g:field type="number" name="priority" required="" value="${publicationInstance.priority}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: publicationInstance, field: 'tags', 'error')} required">
+	<label for="tags">
+		<g:message code="publication.tags.label" default="Tags" />
+	</label>
+	<g:textField name="tags" value="${publicationTags ?: ''}"/>
+</div>
+
