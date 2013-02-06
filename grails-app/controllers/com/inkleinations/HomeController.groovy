@@ -6,6 +6,8 @@ class HomeController {
 
     def family() { }
 
+    def faq() { }
+
     def audio() {
         [audiobookInstanceList : Audiobook.list(sort: "priority"),
          talkInstanceList : Talk.list(sort: "priority"),
