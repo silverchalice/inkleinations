@@ -11,6 +11,10 @@ class UrlMappings {
             controller = "publication"
             action = "publishing"
         }
+        "/publishing/$tag"{
+            controller = "publication"
+            action = "publishing"
+        }
         "/about-us"{
             controller = "home"
             action = "family"
@@ -18,6 +22,18 @@ class UrlMappings {
         "/faq"{
             controller = "home"
             action = "faq"
+        }
+        "/seek-ye-first"{
+            controller = "home"
+            action = "first"
+        }
+        "/bible-copy"{
+            controller = "home"
+            action = "bible"
+        }
+        "/missionary-books"{
+            controller = "home"
+            action = "missionary"
         }
         "/audio"{
             controller = "home"
