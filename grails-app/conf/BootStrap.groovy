@@ -127,20 +127,35 @@ class BootStrap {
                     <p>Actually, there is a lot of subjectivity going on in this world.  Where are the absolutes?  We see them when water freezes or the birds fly south, but in human life, are there any absolutes?  Is there any plan for people, just like there is for penguins?  Some say &#8220;Absolutely not!&#8221;  But that is kind of subjective, too, isn&#8217;t it?</p>
                     <p>God&#8217;s design for the family is perfect, and even though we&#8217;re not a perfect family (not even close), we do have a perfect God who will help us and as we follow Him and His Word, we can begin to fulfill the purpose we were created for.  We&#8217;re counting on it!</p>
                     <p>More about this in a minute, but first we&#8217;d like to introduce you to our gang.  This may take a few minutes, so you may want to sit down.</p>
-                    <p>Zak, our oldest, loves kids, has his own software consulting firm, has been known to convert school buses to RVs, enjoys serving others, and frets without fretting.</p>
-                    <p>Abi, our oldest daughter, loves kids, helps in menu planning, and enjoys graphic arts, sewing, writing, video editing, Spanish translation, piano and arranging music.</p>
-                    <p>Ben loves kids, also works in the consulting firm, writes a news column in a software journal, makes great photos, and can sometimes be convinced to play harmonica in public.</p>
-                    <p>Sarah loves kids, likes figuring out new things, is studying Swahili and ASL, and is a fledgling soap-maker.  She helps us stay organized, which is a huge job, and she can find things.  Very important.</p>
-                    <p>Solomon loves kids.  He is our chief mechanic and consumer of ketchup.  Firewood and squirrels fear him.  He plays and sings bass, enjoys photography and is studying programming. He can talk while inhaling.</p>
-                    <p>Hannah loves kids, writes poetry, enjoys piano, sings loudly and speaks quietly.  She is diligent in the kitchen and loves sewing, cooking, and having people not write about her.</p>
-                    <p>Joanna loves kids, is very outgoing, enjoys singing, is learning Mandarin, and can play two recorders at the same time.  She makes magnificent muffins and can crochet a replica of just about any carbon-based life form.</p>
-                    <p>Rebekah loves kids, enjoys singing and piano and mimicking loved ones, crochets very capably, and has good sentence construction skills.  She can clean a bathroom in under 30 minutes, accompanied by a 4 year old.</p>
-                    <p>Susanna loves kids and is a popular sibling due to her generosity in serving grated cheese.  She is known to be quiet and loud, at different times.  She enjoys drawing, paper crafting, crochet, and photography.</p>
-                    <p>Noah loves kids.  He has his own toolbox, in which he keeps tools, parts of broken objects, old keys, old padlocks and possibly lots of Chapstick.  We&#8217;re not sure; it&#8217;s locked. He is a helper and enjoys accessing problems and suggesting solutions.</p>
-                    <p>Sammy loves kids and tries to patiently wait for a turn to hold the baby.  He has a toolbox, but it&#8217;s not locked.  He enjoys reading, working in the garage, and dismantling flashlights, but cannot yet be trusted with grated cheese.</p>
-                    <p>Gideon loves kids.  He crochets, and has been known to say, &#8220;That&#8217;s pretty good for a boy my age.&#8221; He keeps many of his personal possessions on his person.  This sometimes leads to a visit from the washing machine repair person.  Evidently he needs to use his toolbox more often.</p>
-                    <p>Joshua loves kids, of course.  He is a chief reason Noah keeps his toolbox locked.  He enjoys going on errands with Zak, listening to a sister tell him stories, and being rocked and sang to.</p>
-                    <p>Daniel is very loved and may be one of the most photographed babies in modern history.  His dimples can be spotted in satellite photos.</p>
+                    <br />
+                    <p><img src="/images/family/zak.png" height="70" width="70" style="float:left;margin-right:10px;" />Zak, our oldest, loves kids, has his own software consulting firm, has been known to convert school buses to RVs, enjoys serving others, and frets without fretting.</p>
+                    <br />
+                    <p><img src="/images/family/abi.png" height="90" width="70" style="float:right;margin-left:10px;" />Abi, our oldest daughter, loves kids, helps in menu planning, and enjoys graphic arts, sewing, writing, video editing, Spanish translation, piano and arranging music.</p>
+                    <br />
+                    <p><img src="/images/family/ben.png" height="73" width="70" style="float:left;margin-right:10px;" /> Ben loves kids, also works in the consulting firm, writes a news column in a software journal, makes great photos, and can sometimes be convinced to play harmonica in public.</p>
+                    <br />
+                    <p><img src="/images/family/sarah.png" height="83" width="70" style="float:right;margin-left:10px;" />Sarah loves kids, likes figuring out new things, is studying Swahili and ASL, and is a fledgling soap-maker.  She helps us stay organized, which is a huge job, and she can find things.  Very important.</p>
+                    <br />
+                    <p><img src="/images/family/solomon.png" height="75" width="70" style="float:left;margin-right:10px;" /> Solomon loves kids.  He is our chief mechanic and consumer of ketchup.  Firewood and squirrels fear him.  He plays and sings bass, enjoys photography and is studying programming. He can talk while inhaling.</p>
+                    <br />
+                    <p><img src="/images/family/hannah.png" height="81" width="70" style="float:right;margin-left:10px;" /> Hannah loves kids, writes poetry, enjoys piano, sings loudly and speaks quietly.  She is diligent in the kitchen and loves sewing, cooking, and having people not write about her.</p>
+                    <br />
+                    <p><img src="/images/family/joanna.png" height="83" width="70" style="float:left;margin-right:10px;" />Joanna loves kids, is very outgoing, enjoys singing, is learning Mandarin, and can play two recorders at the same time.  She makes magnificent muffins and can crochet a replica of just about any carbon-based life form.</p>
+                    <br />
+                    <p><img src="/images/family/bekah.png" height="84" width="70" style="float:right;margin-left:10px;" />Rebekah loves kids, enjoys singing and piano and mimicking loved ones, crochets very capably, and has good sentence construction skills.  She can clean a bathroom in under 30 minutes, accompanied by a 4 year old.</p>
+                    <br />
+                    <p><img src="/images/family/suby.png" height="79" width="70" style="float:left;margin-right:10px;" />Susanna loves kids and is a popular sibling due to her generosity in serving grated cheese.  She is known to be quiet and loud, at different times.  She enjoys drawing, paper crafting, crochet, and photography.</p>
+                    <br />
+                    <p><img src="/images/family/noah.png" height="89" width="70" style="float:right;margin-left:10px;" />Noah loves kids.  He has his own toolbox, in which he keeps tools, parts of broken objects, old keys, old padlocks and possibly lots of Chapstick.  We&#8217;re not sure; it&#8217;s locked. He is a helper and enjoys accessing problems and suggesting solutions.</p>
+                    <br />
+                    <p><img src="/images/family/sammy.png" height="78" width="70" style="float:left;margin-right:10px;" />Sammy loves kids and tries to patiently wait for a turn to hold the baby.  He has a toolbox, but it&#8217;s not locked.  He enjoys reading, working in the garage, and dismantling flashlights, but cannot yet be trusted with grated cheese.</p>
+                    <br />
+                    <p><img src="/images/family/giddy.png" height="84" width="70" style="float:right;margin-left:10px;" />Gideon loves kids.  He crochets, and has been known to say, &#8220;That&#8217;s pretty good for a boy my age.&#8221; He keeps many of his personal possessions on his person.  This sometimes leads to a visit from the washing machine repair person.  Evidently he needs to use his toolbox more often.</p>
+                    <br />
+                    <p><img src="/images/family/joshie.png" height="81" width="70" style="float:left;margin-right:10px;" />Joshua loves kids, of course.  He is a chief reason Noah keeps his toolbox locked.  He enjoys going on errands with Zak, listening to a sister tell him stories, and being rocked and sang to.</p>
+                    <br />
+                    <p><img src="/images/family/daniel.png" height="66" width="70" style="float:right;margin-left:10px;" />Daniel is very loved and may be one of the most photographed babies in modern history.  His dimples can be spotted in satellite photos.</p>
+                    <br /><br />
                     <p>Our family works together each day, and we also operate a family business, which has been an adventure.</p>
                     <p>Trees in the fall don&#8217;t deliberate about changing color, do they?  Caterpillars don&#8217;t opt out of making a cocoon.  You don&#8217;t hear of the disintegration of the porcupine family unit.  God has laid out intricate plans for all of life.  But He didn&#8217;t stop that plan with people.  However, He did give people a choice, whether or not to follow His plan for their lives.</p>
                     <p>We look around and notice that some people make pretty bad choices, choices that affect others, sometimes for the worse.  The Bible calls that sin, and it doesn&#8217;t just affect ourselves and others, but actually causes God&#8217;s condemnation.  There really is evil in this world, and if we were each honest with ourselves, we would admit that we are a part of it.  We have 14 children, and we have never had to teach them to sin.  The root of Cain&#8217;s sin in killing his brother is at work in every human heart.  And we are in big trouble because of it.</p>
@@ -223,6 +238,108 @@ class BootStrap {
             new Section(name:"faq", html:"""
 <div class="post">
                 <h2 class="title">Frequently asked questions</h2>
+                <div class="entry">
+                    <a name="work"></a>
+                    <br />
+                    <h3>&#8220;Isn't it a lot of work?&#8221;</h3><br />
+                    <p>Yes, we have a lot to do as a family of 16. However, we have changed a lot since were first married. We have learned that laziness and leisure are not really the best for us. But even more, children truly are blessings. We don't feel we are babysitting everyday; these little people are our treasures. God has used them, and the demands of parenting, to help us see our need for the Lord's strength. We are not perfect parents. God is still working in our lives and never gives up on us, even though we are very unworthy! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="good"></a>
+                    <h3>&#8220;Your children are so good! Do they always get along?&#8221;</h3><br />
+                    <p>Our children are normal children and we are normal people. The Bible says that normal people are sinners by nature.</p>
+                    <p>One investment we have had to make is discipline. Our children are born desiring their own way, and we have to lovingly and patiently train them that their obedience is required. It is hard work! Rather than giving in to their every wish, spoiling them, trying to "keep them quiet" or "keep them out of our hair," we must choose to love them by training them in the way they should go. It is not loving our children to indulge them, to teach them that in order to be happy, they must have their way. This only leads to selfish, unhappy adulthood!</p>
+                    <p>We love our children unconditionally, but we understand that they have the same tendency to be self-seeking as we do. One major purpose of our outings (shopping, etc.) is to teach and practice loving one another as ourselves. We sure need the practice!</p>
+                    <p>We don't believe that perfect parenting produces perfect children. Rather, our goal in parenting is to show our children that they need the Lord in order to live a life pleasing to Him. Jesus called this being "born again." &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="rich"></a>
+                    <h3>&#8220;Are you rich?&#8221;</h3><br />
+                    <p>God has always provided for our family. He has miraculously given Dave a career which usually requires a college degree, though he has none. Supporting a family our size does take money, but God has always provided what we needed when we needed it.</p>
+                    <p>In our early years of marriage, when we just had ourselves to spend on, we were terrible in handling our money. We always ran out, and had nothing to show for it!</p>
+                    <p>Jesus said to not lay up for ourselves treasures on earth, where moth and rust destroy and thieves break in and steal. He said to lay up for ourselves treasures in heaven. Our true riches are our children, and they are the only things we can take with us to heaven. It is our prayer that they will each put their faith in Christ our Savior. Our main financial goal has always been that Debbie would stay home with our children. By eliminating a lot of other non-necessities, we have found a lot of ways to help with this goal! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="break"></a>
+                    <h3>&#8220;Don&#8217;t you ever want a break?&#8221;</h3><br />
+                    <p>Truthfully, no. We get tired; we get stressed; we get discouraged sometimes. We have to choose to believe what God has said about children over what we feel in our selfish hearts! We see so much that the Lord wants to do in our family and are thankful for what He has already done. We have so much hope in God's promises for us and our children.</p>
+                    <p>And we see that we are not perfect parents! We haven't done everything perfectly. When we have challenges with our children, it's not usually too hard to see where we have slacked off in following the directions in the Bible.</p>
+                    <p>Maybe you could say we've been "re-programmed." We believe children (even handicapped, retarded, or "unwanted" children) are a blessing from God. They are His creation. Children are not the problem, but our society's attitude towards them often can be. For example, we are repulsed by public school programs where students are given an electronic "baby" which must be held and fed when the alarm goes off.to show young adults how their lives will be weighed down by a child! Such an experience can only contribute to a terrible attitude towards parenthood.</p>
+                    <p>By following God's plan, including loving, prompt and attentive discipline and parental instruction based on God's Word, we spare ourselves so many unnecessary struggles with our children. Parenting is hard work, but it is a privilege and well worth it. &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="homeschool"></a>
+                    <h3>&#8220;And you homeschool, too?!&#8221;</h3><br />
+                    <p>Parenting requires that we prepare our children for life. School is one part of that preparation. It is not the only thing, nor is it necessarily the most important thing.</p>
+                    <p>What we mean by "homeschool" may not be the common perception of homeschool. It is not a school in our home. Traditional schools are set up for the convenience of school staff handling huge numbers of children. They are not set up that way because it is the best way to educate a child.</p>
+                    <p>We simply include our children in our daily life. We use various tools to equip them, spiritually and academically. We teach them parenting skills (using live children!!), home making, technical things, whatever we feel the Lord would have them learn to serve Him. We want them to learn that work is something God provides for us, and doing what God wants is not drudgery. We want them to see real life and share in the lives of people God has put in their lives. We want to teach them that the purpose of life is not leisure and play.</p>
+                    <p>Homeschooling allows us as parents to be the primary influence over our children, and we feel that is very important, given our directions in the Bible. Truly, our example is their biggest teacher, and that is a very intimidating fact! Our daily involvement, we feel, is really the only way to carry out our job descriptions as given in the Bible. &nbsp; <a href="#footer">Return</a></p>
+                </div>
+            </div>
+""").save(failOnError:true)
+            new Section(name:"missionary", html:"""
+<div class="post">
+                <h2 class="title">Missionary books</h2>
+                <div class="entry">
+                    <a name="work"></a>
+                    <br />
+                    <h3>&#8220;Isn't it a lot of work?&#8221;</h3><br />
+                    <p>Yes, we have a lot to do as a family of 16. However, we have changed a lot since were first married. We have learned that laziness and leisure are not really the best for us. But even more, children truly are blessings. We don't feel we are babysitting everyday; these little people are our treasures. God has used them, and the demands of parenting, to help us see our need for the Lord's strength. We are not perfect parents. God is still working in our lives and never gives up on us, even though we are very unworthy! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="good"></a>
+                    <h3>&#8220;Your children are so good! Do they always get along?&#8221;</h3><br />
+                    <p>Our children are normal children and we are normal people. The Bible says that normal people are sinners by nature.</p>
+                    <p>One investment we have had to make is discipline. Our children are born desiring their own way, and we have to lovingly and patiently train them that their obedience is required. It is hard work! Rather than giving in to their every wish, spoiling them, trying to "keep them quiet" or "keep them out of our hair," we must choose to love them by training them in the way they should go. It is not loving our children to indulge them, to teach them that in order to be happy, they must have their way. This only leads to selfish, unhappy adulthood!</p>
+                    <p>We love our children unconditionally, but we understand that they have the same tendency to be self-seeking as we do. One major purpose of our outings (shopping, etc.) is to teach and practice loving one another as ourselves. We sure need the practice!</p>
+                    <p>We don't believe that perfect parenting produces perfect children. Rather, our goal in parenting is to show our children that they need the Lord in order to live a life pleasing to Him. Jesus called this being "born again." &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="rich"></a>
+                    <h3>&#8220;Are you rich?&#8221;</h3><br />
+                    <p>God has always provided for our family. He has miraculously given Dave a career which usually requires a college degree, though he has none. Supporting a family our size does take money, but God has always provided what we needed when we needed it.</p>
+                    <p>In our early years of marriage, when we just had ourselves to spend on, we were terrible in handling our money. We always ran out, and had nothing to show for it!</p>
+                    <p>Jesus said to not lay up for ourselves treasures on earth, where moth and rust destroy and thieves break in and steal. He said to lay up for ourselves treasures in heaven. Our true riches are our children, and they are the only things we can take with us to heaven. It is our prayer that they will each put their faith in Christ our Savior. Our main financial goal has always been that Debbie would stay home with our children. By eliminating a lot of other non-necessities, we have found a lot of ways to help with this goal! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="break"></a>
+                    <h3>&#8220;Don&#8217;t you ever want a break?&#8221;</h3><br />
+                    <p>Truthfully, no. We get tired; we get stressed; we get discouraged sometimes. We have to choose to believe what God has said about children over what we feel in our selfish hearts! We see so much that the Lord wants to do in our family and are thankful for what He has already done. We have so much hope in God's promises for us and our children.</p>
+                    <p>And we see that we are not perfect parents! We haven't done everything perfectly. When we have challenges with our children, it's not usually too hard to see where we have slacked off in following the directions in the Bible.</p>
+                    <p>Maybe you could say we've been "re-programmed." We believe children (even handicapped, retarded, or "unwanted" children) are a blessing from God. They are His creation. Children are not the problem, but our society's attitude towards them often can be. For example, we are repulsed by public school programs where students are given an electronic "baby" which must be held and fed when the alarm goes off.to show young adults how their lives will be weighed down by a child! Such an experience can only contribute to a terrible attitude towards parenthood.</p>
+                    <p>By following God's plan, including loving, prompt and attentive discipline and parental instruction based on God's Word, we spare ourselves so many unnecessary struggles with our children. Parenting is hard work, but it is a privilege and well worth it. &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="homeschool"></a>
+                    <h3>&#8220;And you homeschool, too?!&#8221;</h3><br />
+                    <p>Parenting requires that we prepare our children for life. School is one part of that preparation. It is not the only thing, nor is it necessarily the most important thing.</p>
+                    <p>What we mean by "homeschool" may not be the common perception of homeschool. It is not a school in our home. Traditional schools are set up for the convenience of school staff handling huge numbers of children. They are not set up that way because it is the best way to educate a child.</p>
+                    <p>We simply include our children in our daily life. We use various tools to equip them, spiritually and academically. We teach them parenting skills (using live children!!), home making, technical things, whatever we feel the Lord would have them learn to serve Him. We want them to learn that work is something God provides for us, and doing what God wants is not drudgery. We want them to see real life and share in the lives of people God has put in their lives. We want to teach them that the purpose of life is not leisure and play.</p>
+                    <p>Homeschooling allows us as parents to be the primary influence over our children, and we feel that is very important, given our directions in the Bible. Truly, our example is their biggest teacher, and that is a very intimidating fact! Our daily involvement, we feel, is really the only way to carry out our job descriptions as given in the Bible. &nbsp; <a href="#footer">Return</a></p>
+                </div>
+            </div>
+""").save(failOnError:true)
+            new Section(name:"bible", html:"""
+<div class="post">
+                <h2 class="title">Bible copy</h2>
+                <div class="entry">
+                    <a name="work"></a>
+                    <br />
+                    <h3>&#8220;Isn't it a lot of work?&#8221;</h3><br />
+                    <p>Yes, we have a lot to do as a family of 16. However, we have changed a lot since were first married. We have learned that laziness and leisure are not really the best for us. But even more, children truly are blessings. We don't feel we are babysitting everyday; these little people are our treasures. God has used them, and the demands of parenting, to help us see our need for the Lord's strength. We are not perfect parents. God is still working in our lives and never gives up on us, even though we are very unworthy! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="good"></a>
+                    <h3>&#8220;Your children are so good! Do they always get along?&#8221;</h3><br />
+                    <p>Our children are normal children and we are normal people. The Bible says that normal people are sinners by nature.</p>
+                    <p>One investment we have had to make is discipline. Our children are born desiring their own way, and we have to lovingly and patiently train them that their obedience is required. It is hard work! Rather than giving in to their every wish, spoiling them, trying to "keep them quiet" or "keep them out of our hair," we must choose to love them by training them in the way they should go. It is not loving our children to indulge them, to teach them that in order to be happy, they must have their way. This only leads to selfish, unhappy adulthood!</p>
+                    <p>We love our children unconditionally, but we understand that they have the same tendency to be self-seeking as we do. One major purpose of our outings (shopping, etc.) is to teach and practice loving one another as ourselves. We sure need the practice!</p>
+                    <p>We don't believe that perfect parenting produces perfect children. Rather, our goal in parenting is to show our children that they need the Lord in order to live a life pleasing to Him. Jesus called this being "born again." &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="rich"></a>
+                    <h3>&#8220;Are you rich?&#8221;</h3><br />
+                    <p>God has always provided for our family. He has miraculously given Dave a career which usually requires a college degree, though he has none. Supporting a family our size does take money, but God has always provided what we needed when we needed it.</p>
+                    <p>In our early years of marriage, when we just had ourselves to spend on, we were terrible in handling our money. We always ran out, and had nothing to show for it!</p>
+                    <p>Jesus said to not lay up for ourselves treasures on earth, where moth and rust destroy and thieves break in and steal. He said to lay up for ourselves treasures in heaven. Our true riches are our children, and they are the only things we can take with us to heaven. It is our prayer that they will each put their faith in Christ our Savior. Our main financial goal has always been that Debbie would stay home with our children. By eliminating a lot of other non-necessities, we have found a lot of ways to help with this goal! &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="break"></a>
+                    <h3>&#8220;Don&#8217;t you ever want a break?&#8221;</h3><br />
+                    <p>Truthfully, no. We get tired; we get stressed; we get discouraged sometimes. We have to choose to believe what God has said about children over what we feel in our selfish hearts! We see so much that the Lord wants to do in our family and are thankful for what He has already done. We have so much hope in God's promises for us and our children.</p>
+                    <p>And we see that we are not perfect parents! We haven't done everything perfectly. When we have challenges with our children, it's not usually too hard to see where we have slacked off in following the directions in the Bible.</p>
+                    <p>Maybe you could say we've been "re-programmed." We believe children (even handicapped, retarded, or "unwanted" children) are a blessing from God. They are His creation. Children are not the problem, but our society's attitude towards them often can be. For example, we are repulsed by public school programs where students are given an electronic "baby" which must be held and fed when the alarm goes off.to show young adults how their lives will be weighed down by a child! Such an experience can only contribute to a terrible attitude towards parenthood.</p>
+                    <p>By following God's plan, including loving, prompt and attentive discipline and parental instruction based on God's Word, we spare ourselves so many unnecessary struggles with our children. Parenting is hard work, but it is a privilege and well worth it. &nbsp; <a href="#footer">Return</a></p><br />
+                    <a name="homeschool"></a>
+                    <h3>&#8220;And you homeschool, too?!&#8221;</h3><br />
+                    <p>Parenting requires that we prepare our children for life. School is one part of that preparation. It is not the only thing, nor is it necessarily the most important thing.</p>
+                    <p>What we mean by "homeschool" may not be the common perception of homeschool. It is not a school in our home. Traditional schools are set up for the convenience of school staff handling huge numbers of children. They are not set up that way because it is the best way to educate a child.</p>
+                    <p>We simply include our children in our daily life. We use various tools to equip them, spiritually and academically. We teach them parenting skills (using live children!!), home making, technical things, whatever we feel the Lord would have them learn to serve Him. We want them to learn that work is something God provides for us, and doing what God wants is not drudgery. We want them to see real life and share in the lives of people God has put in their lives. We want to teach them that the purpose of life is not leisure and play.</p>
+                    <p>Homeschooling allows us as parents to be the primary influence over our children, and we feel that is very important, given our directions in the Bible. Truly, our example is their biggest teacher, and that is a very intimidating fact! Our daily involvement, we feel, is really the only way to carry out our job descriptions as given in the Bible. &nbsp; <a href="#footer">Return</a></p>
+                </div>
+            </div>
+""").save(failOnError:true)
+            new Section(name:"first", html:"""
+<div class="post">
+                <h2 class="title">&#8220;Seek ye first&#8221; homeschooling</h2>
                 <div class="entry">
                     <a name="work"></a>
                     <br />
