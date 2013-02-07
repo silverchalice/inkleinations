@@ -52,7 +52,7 @@ a:hover {
 
 #wrapper {
 	overflow: hidden;
-	background: #FFFFFF url(../images/img02.jpg) repeat-x left top;
+	background: #FFFFFF url(../images/img02.jpeg) repeat-x left top;
 }
 
 .container {
@@ -234,9 +234,10 @@ a:hover {
 
 #content {
 	float: left;
+    height: 890px;
 	width: 620px;
-	padding: 0px 20px 0px 0px;
-    margin-right: 10px;
+	padding-right: 30px;
+    overflow: auto;
 }
 
 .post {
@@ -571,7 +572,7 @@ a:hover {
 }
 
 img.thumbnail {
-    margin-right: 14px;
+    padding-right: 20px;
 }
 
 tr.pub > td {

@@ -22,12 +22,20 @@ Released   : 20120818
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
 <g:layoutHead/>
 <r:layoutResources />
+<style type="text/css">
+    #logo {
+        height: 300px !important;
+    }
+    #wrapper {
+        background: #FFFFFF url(../images/img02-shorter.jpeg) repeat-x left top !important;
+    }
+</style>
 </head>
 <body>
 <div id="wrapper">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="${resource(dir:'')}">Home</a></li>
+			<li class="current_page_item"><a href="/">Home</a></li>
 			<li><g:link controller="home" action="family">About Us</g:link></li>
 			<li><a href="http://blog.inkleinations.com">Blog</a></li>
 			<li><g:link controller="publication" action="publishing">Publishing</g:link></li>
@@ -41,7 +49,6 @@ Released   : 20120818
         <p><section:content for="subheader" /></p>
 	</div>
 	<div id="page" class="container">
-		<div id="banner"><section:image for="headerimage" width="959" height="380" alt="" /></div>
 		<div id="content">
             <g:layoutBody />
 			<div style="clear: both;">&nbsp;</div>
