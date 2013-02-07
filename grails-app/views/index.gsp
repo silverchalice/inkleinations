@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="public"/>
+		<meta name="layout" content="home"/>
 		<title>Welcome to inKLEINations</title>
     </head>
     <body>
