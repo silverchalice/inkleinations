@@ -1,6 +1,7 @@
 package com.inkleinations
 
 import org.springframework.dao.DataIntegrityViolationException
+import org.grails.taggable.*
 
 class PublicationController {
 
@@ -120,7 +121,21 @@ class PublicationController {
     }
 
     def publishing() {
-        [publicationInstanceList: Publication.list(sort:"priority")]
+        def publicationInstanceList = null
+        def msg = null
+        if(params.tag){
+           if(!Publication.findAllByTag(params.tag)){
+               msg = "Nothing found. &nbsp;&nbsp;" + g.link(controller:"publication", action:"publishing"){ "See all publications" }
+           } else {
+               msg = "Showing publications tagged &#8220;${params.tag}.&#8221;"
+               publicationInstanceList = Publication.findAllByTag(params.tag)
+           }
+        } else {
+            publicationInstanceList = Publication.list(sort: "priority")
+        }
+        [publicationInstanceList: publicationInstanceList,
+         message: msg, currentlyUsedTags: Tag.list(),
+         currentTag: params.tag ?: null]
     }
 
 }
