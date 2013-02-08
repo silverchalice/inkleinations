@@ -105,20 +105,6 @@ Released   : 20120818
 		</div>
 	</div>
 </div>
-<a name="footer"></a> 
-<div id="footer-content" class="container">
-	<div id="footer-bg">
-		<div id="column1">
-            <section:content for="footer1text" />
-		</div>
-		<div id="column2">
-            <section:content for="footer2text" />
-		</div>
-		<div id="column3">
-            <section:content for="footer3text" />
-		</div>
-	</div>
-</div>
 <div id="footer">
     <section:content for="footer4text" />
 </div>
