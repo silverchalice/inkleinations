@@ -14,13 +14,7 @@
         <g:form method="post" name="contact" controller="home" action="contact">
             <p>
                 Subject: &nbsp;
-                <select name="subject" id="subject" style="width: 530px;">
-                    <option value="A question" ${(subject == '' || subject == 'A question') ? 'selected=""' : ''}>Question</option>
-                    <option value="A request for media" ${subject == 'A request for media' ? 'selected=""' : ''}>Request media</option>
-                    <option value="A testimony" ${subject == 'A testimony' ? 'selected=""' : ''}>Testimony</option>
-                    <option value="A request to join the mailing list" ${subject == 'A request to join the mailing list' ? 'selected=""' : ''}>Join our mailing list</option>
-                    <option value="A question about your hair" ${subject == 'A question about your hair' ? 'selected=""' : ''}>Who does your hair?</option>
-                </select>&nbsp;
+                <input type="text" name="subject" id="subject" style="width: 520px;" value="${subject}" />
             </p>
             <br />
             <p>
