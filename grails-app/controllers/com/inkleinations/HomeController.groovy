@@ -40,12 +40,12 @@ class HomeController {
         EmailValidator emailValidator = EmailValidator.getInstance() 
 
         if(request.method == "POST"){
-            if(params.message && params.email && params.answer == params.firstValue + params.secondValue){
+            if(params.message && params.email && emailValidator.isValid(params.email) && params.int('answer') == params.int('firstValue') + params.int('secondValue')){
                 mailService.sendMail {
                     to "daveanddebklein@yahoo.com"
                     from "inKLEINations.com <inkleinationswebservant@gmail.com>"
                     //bcc "ben@silver-chalice.com"
-                    subject "${params.subject} (from inKLEINations.com)"
+                    subject params.subject ? "${params.subject} (from inKLEINations.com)" : "Unspecified message (from inKLEINations.com"
                     html "<p>On ${g.formatDate(date:new Date(), format: dateFormat)}, ${params.email} said:</p> <p>-----------------------------------------------------------</p> ${params.message.encodeAsHTML()} <p>------------------------------------------------------------</p><p>This is an automated message. Please do not reply to this email. If you need additional help, visit <a href='http://www.apple.com/support/appleid/'>Apple Support</a>.</p>"
                  }
                  msg = "Thank you! Your message has been sent."
@@ -58,7 +58,7 @@ class HomeController {
             } else if (!params.message){
                 somethingWentWrong = true
                 msg = "Please enter a message to send."
-            } else if(params.firstValue + params.secondValue != params.answer){
+            } else if(params.int('firstValue') + params.int('secondValue') != params.int('answer')){
                 somethingWentWrong = true
                 msg = "Sorry &#8212; your answer to the math question was incorrect. Please try again."
             }
