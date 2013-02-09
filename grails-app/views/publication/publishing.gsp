@@ -1,3 +1,4 @@
+<%@ page import="org.apache.commons.lang.WordUtils" %>
 <!doctype html>
 <html>
 	<head>
@@ -16,7 +17,7 @@
             <select name="tag" id="tag" style="width: 480px;">
                 <option value="" ${!currentTag ? 'selected=""' : ''}>All</option>
                 <g:each in="${currentlyUsedTags}" var="tag">
-                    <option value="${tag}" ${currentTag == tag.toString() ? 'selected=""' : ''}>${tag?.toString().capitalize()}</option>
+                    <option value="${tag}" ${currentTag == tag.toString() ? 'selected=""' : ''}>${org.apache.commons.lang.WordUtils.capitalizeFully(tag?.toString())}</option>
                 </g:each>
             </select>&nbsp;
             <g:actionSubmit controller="publication" action="publishing" value="Select" />
@@ -27,7 +28,7 @@
                 <g:each in="${publicationInstanceList}" var="publicationInstance">
                     <tr class="pub">
                         <td>
-                            <a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><img height="269" width="180" border="0" src="${resource(dir:'images/covers', file: publicationInstance.imageName)}" class="thumbnail"></a>
+                            <a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><img height="269" width="180" border="0" src="${resource(dir:'images', file: publicationInstance.imageName)}" class="thumbnail"></a>
                         </td>
                         <td><p><a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><strong>${publicationInstance.title}</strong></a></p>
                             ${publicationInstance.description}<br />
