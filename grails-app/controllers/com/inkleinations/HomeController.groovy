@@ -33,10 +33,14 @@ class HomeController {
 
     def contact() {
         def msg = null
+        def somethingWentWrong = false
+        def firstValue = Math.floor(Math.random() * 9).round() + 1
+        def secondValue = Math.floor(Math.random() * 9).round() + 1
         def dateFormat = "EEEE, MMMM d, yyyy, 'at' h:mm a"
         EmailValidator emailValidator = EmailValidator.getInstance() 
+
         if(request.method == "POST"){
-            if(params.message && params.email){
+            if(params.message && params.email && params.answer == params.firstValue + params.secondValue){
                 mailService.sendMail {
                     to "daveanddebklein@yahoo.com"
                     from "inKLEINations.com <inkleinationswebservant@gmail.com>"
@@ -46,14 +50,27 @@ class HomeController {
                  }
                  msg = "Thank you! Your message has been sent."
             } else if(!params.email){
+                somethingWentWrong = true
                 msg = "Please enter your email address so that we can respond."
             } else if(params.email && !emailValidator.isValid(params.email)){
+                somethingWentWrong = true
                 msg = "Please enter a valid email address so that we can respond."
-            } else {
+            } else if (!params.message){
+                somethingWentWrong = true
                 msg = "Please enter a message to send."
+            } else if(params.firstValue + params.secondValue != params.answer){
+                somethingWentWrong = true
+                msg = "Sorry &#8212; your answer to the math question was incorrect. Please try again."
             }
         }
-        [message: msg]
+
+        if(somethingWentWrong){
+            [msg: msg, firstValue: firstValue, secondValue: secondValue,
+             email: params.email ?: "", subject: params.subject ?: "",
+             message: params.message ?: ""]
+        } else {
+            [msg: msg, firstValue: firstValue, secondValue: secondValue]
+        }
     }
 
 }
