@@ -29,8 +29,9 @@ class SongController {
             return
         }
 
-        new File('web-app/audio').mkdirs()
-        song.transferTo(new File('web-app/audio' + File.separatorChar + song.getOriginalFilename()))								             			     	
+        String root = "${request.getSession().getServletContext().getRealPath('/')}"
+        new File("${root}/audio").mkdirs()
+        song.transferTo(new File("${root}/audio" + File.separatorChar + song.getOriginalFilename()))								             			     	
         songInstance.setTags(tags)
 
         songInstance.save()

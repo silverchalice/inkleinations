@@ -29,8 +29,9 @@ class TalkController {
             return
         }
 
-        new File('web-app/audio').mkdirs()
-        talk.transferTo(new File('web-app/audio' + File.separatorChar + talk.getOriginalFilename()))								             			     	
+        String root = "${request.getSession().getServletContext().getRealPath('/')}"
+        new File("${root}/audio").mkdirs()
+        talk.transferTo(new File("${root}/audio" + File.separatorChar + talk.getOriginalFilename()))								             			     	
         talkInstance.setTags(tags)
 
         talkInstance.save()

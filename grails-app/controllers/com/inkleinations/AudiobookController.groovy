@@ -29,8 +29,9 @@ class AudiobookController {
             return
         }
 
-        new File('web-app/audio').mkdirs()
-        audiobook.transferTo(new File('web-app/audio' + File.separatorChar + audiobook.getOriginalFilename()))								             			     	
+        String root = "${request.getSession().getServletContext().getRealPath('/')}"
+        new File("${root}/audio").mkdirs()
+        audiobook.transferTo(new File("${root}/audio" + File.separatorChar + audiobook.getOriginalFilename()))								             			     	
         audiobookInstance.setTags(tags)
 
         audiobookInstance.save()
