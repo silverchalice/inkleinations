@@ -32,10 +32,11 @@ class PublicationController {
             return
         }
 
-        new File('web-app/images/covers').mkdirs()
-        new File('web-app/pdf').mkdirs()
-        image.transferTo(new File('web-app/images/covers' + File.separatorChar + image.getOriginalFilename()))								             			     	
-        pdf.transferTo(new File('web-app/pdf' + File.separatorChar + pdf.getOriginalFilename()))								             			     	
+        String root = "${request.getSession().getServletContext().getRealPath('/')}"
+        new File("${root}/images").mkdirs()
+        new File("${root}/pdf").mkdirs()
+        image.transferTo(new File("${root}/images" + File.separatorChar + image.getOriginalFilename()))								             			     	
+        pdf.transferTo(new File("${root}/pdf" + File.separatorChar + pdf.getOriginalFilename()))								             			     	
         publicationInstance.setTags(tags)
 
         publicationInstance.save()
