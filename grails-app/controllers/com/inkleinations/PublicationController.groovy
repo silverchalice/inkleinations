@@ -33,9 +33,9 @@ class PublicationController {
         }
 
         String root = "${request.getSession().getServletContext().getRealPath('/')}"
-        new File("${root}/images").mkdirs()
+        new File("${root}/covers").mkdirs()
         new File("${root}/pdf").mkdirs()
-        image.transferTo(new File("${root}/images" + File.separatorChar + image.getOriginalFilename()))								             			     	
+        image.transferTo(new File("${root}/covers" + File.separatorChar + image.getOriginalFilename()))								             			     	
         pdf.transferTo(new File("${root}/pdf" + File.separatorChar + pdf.getOriginalFilename()))								             			     	
         publicationInstance.setTags(tags)
 
