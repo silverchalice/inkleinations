@@ -6,7 +6,6 @@
     </head>
     <body>
         <section:content for="contact" />
-        <br />
         <g:if test="msg">
             <p><i>${msg}</i></p>
             <br />
