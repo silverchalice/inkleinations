@@ -31,6 +31,8 @@ class HomeController {
 
     def links() { }
 
+    def conference_sessions() { }
+
     def contact() {
         def msg = null
         def somethingWentWrong = false
