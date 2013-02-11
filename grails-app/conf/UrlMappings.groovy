@@ -43,6 +43,10 @@ class UrlMappings {
             controller = "home"
             action = "links"
         }
+        "/sessions"{
+            controller = "home"
+            action = "conference_sessions"
+        }
         "/contact"{
             controller = "home"
             action = "contact"
