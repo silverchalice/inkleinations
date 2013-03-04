@@ -42,14 +42,15 @@ grails.plugins.springsecurity.interceptUrlMap = [
    '/contact':       ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/audio/**':      ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/pdf/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
-   '/covers/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/covers/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/js/**':         ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/css/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+   '/static/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/images/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/*':             ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/login/**':      ['IS_AUTHENTICATED_ANONYMOUSLY'],
    '/logout/**':     ['IS_AUTHENTICATED_ANONYMOUSLY'],
-   '/**':            ['ROLE_ADMIN']
+   '/**':                              ['ROLE_ADMIN']
 ]
 
 images.location = "web-app/images/family"
