@@ -25,18 +25,23 @@ class PublicationController {
 		def image = request.getFile('image')
 		def pdf = request.getFile('pdf')
         def tags = params.tags.split(", ") as List
-        publicationInstance.imageName = image.getOriginalFilename()
-        publicationInstance.pdfName = pdf.getOriginalFilename()
+        publicationInstance.pdfName = "https://inkleinations.s3.amazonaws.com/pdfs/publications/${pdf.originalFilename}"
+        publicationInstance.imageName = "https://inkleinations.s3.amazonaws.com/images/publication-thumbnails/${image.originalFilename}"
         if (image.empty || pdf.empty || !publicationInstance.save(flush: true)) {
             render(view: "create", model: [publicationInstance: publicationInstance])
             return
         }
 
-        String root = "${request.getSession().getServletContext().getRealPath('/')}"
-        new File("${root}/covers").mkdirs()
-        new File("${root}/pdf").mkdirs()
-        image.transferTo(new File("${root}/covers" + File.separatorChar + image.getOriginalFilename()))								             			     	
-        pdf.transferTo(new File("${root}/pdf" + File.separatorChar + pdf.getOriginalFilename()))								             			     	
+        image.inputStream.s3upload(image.originalFilename) {
+            bucket "inkleinations"
+            path "images/publication-thumbnails"
+        }
+
+        pdf.inputStream.s3upload(pdf.originalFilename) {
+            bucket "inkleinations"
+            path "pdfs/publications"
+        }
+
         publicationInstance.setTags(tags)
 
         publicationInstance.save()

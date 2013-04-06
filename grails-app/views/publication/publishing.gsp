@@ -28,9 +28,9 @@
                 <g:each in="${publicationInstanceList}" var="publicationInstance">
                     <tr class="pub">
                         <td>
-                            <a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><img height="269" width="180" border="0" src="/covers/${publicationInstance.imageName}" class="thumbnail"></a>
+                            <a href="${publicationInstance.pdfName}"><img height="269" width="180" border="0" src="${publicationInstance.imageName}" class="thumbnail"></a>
                         </td>
-                        <td><p><a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><strong>${publicationInstance.title}</strong></a></p>
+                        <td><p><a href="${publicationInstance.pdfName}"><strong>${publicationInstance.title}</strong></a> <br /> <small>${publicationInstance.author}</small><br /></p>
                             ${publicationInstance.description}<br />
                             <br />
                             ${publicationInstance.pages} ${publicationInstance.pages > 1 ? "pages" : "page"}.</p>
