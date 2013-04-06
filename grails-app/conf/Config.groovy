@@ -81,6 +81,20 @@ grails.spring.bean.packages = []
 // whether to disable processing of multi part requests
 grails.web.disable.multipart=false
 
+grails {
+   plugin {
+      aws {
+         credentials {
+            accessKey = "AKIAIORPC7XAYM4737BA"
+            secretKey = "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"
+         }
+         s3 {
+            acl = "public"
+         }
+      }
+   }
+}
+
 // request parameters to mask when logging exceptions
 grails.exceptionresolver.params.exclude = ['password']
 
