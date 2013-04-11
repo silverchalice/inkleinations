@@ -47,7 +47,7 @@ class HomeController {
                     to "daveanddebklein@yahoo.com"
                     from "inKLEINations.com <inkleinationswebservant@gmail.com>"
                     //bcc "ben@silver-chalice.com"
-                    subject params.subject ? "${params.subject} (from inKLEINations.com)" : "Unspecified message (from inKLEINations.com"
+                    subject params.subject ? "[inKLEINations.com] ${params.subject}" : "[inKLEINations.com] Unspecified message"
                     html "<p>On ${g.formatDate(date:new Date(), format: dateFormat)}, ${params.email} said:</p> <p>-----------------------------------------------------------</p> ${params.message.encodeAsHTML()} <p>------------------------------------------------------------</p><p>This is an automated message. Please do not reply to this email. If you need additional help, visit <a href='http://www.apple.com/support/appleid/'>Apple Support</a>.</p>"
                  }
                  msg = "Thank you! Your message has been sent."
