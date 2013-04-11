@@ -9,7 +9,7 @@
         <g:if test="${audiobookInstanceList}">
             <h4>Audiobooks</h4>
             <g:each in="${audiobookInstanceList}" var="audiobook">
-                <p><strong><a href="${resource(dir:'audio', file:audiobook.bookName)}">${audiobook.title}</a></strong></p>
+                <p><strong><a href="${audiobook.bookName}">${audiobook.title}</a></strong></p>
                 <p><i>${audiobook.title}</i>, by ${audiobook.author}. Read by ${audiobook.reader}. (${audiobook.time})${audiobook.description ? '<br />' + audiobook.description : ''} </p>
                 <br />
             </g:each>
@@ -17,7 +17,7 @@
         <g:if test="${talkInstanceList}">
             <h4>Conference talks</h4>
             <g:each in="${talkInstanceList}" var="talk">
-                <p><strong><a href="${resource(dir:'audio', file:talk.talkName)}">${talk.title}</a></strong> (${talk.name})</p>
+                <p><strong><a href="${talk.talkName}">${talk.title}</a></strong> (${talk.name})</p>
                 <p>${talk.description} (${talk.time})</p>
                 <br />
             </g:each>
@@ -25,7 +25,7 @@
         <g:if test="${songInstanceList}">
             <h4>Music</h4>
             <g:each in="${songInstanceList}" var="song">
-                <p><strong><a href="${resource(dir:'audio', file:song.songName)}">${song.title}</a></strong></p>
+                <p><strong><a href="${song.songName}">${song.title}</a></strong></p>
                 <p>${song.description} (${song.time})</p>
                 <br />
             </g:each>
@@ -36,9 +36,9 @@
                 <g:each in="${publicationInstanceList}" var="publicationInstance">
                     <tr class="pub">
                         <td>
-                            <a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><img height="269" width="180" border="0" src="/covers/${publicationInstance.imageName}" class="thumbnail"></a>
+                            <a href="${publicationInstance.pdfName}"><img height="269" width="180" border="0" src="${publicationInstance.imageName}" class="thumbnail"></a>
                         </td>
-                        <td><p><a href="${resource(dir:'pdf', file: publicationInstance.pdfName)}"><strong>${publicationInstance.title}</strong></a></p>
+                        <td><p><a href="${publicationInstance.pdfName}"><strong>${publicationInstance.title}</strong></a></p>
                             ${publicationInstance.description}<br />
                             <br />
                             ${publicationInstance.pages} ${publicationInstance.pages > 1 ? "pages" : "page"}.
