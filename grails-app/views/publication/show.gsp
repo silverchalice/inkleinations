@@ -37,11 +37,6 @@
             </g:else>
             <br />
             
-            <g:if test="${publicationInstance.body}">
-              ${publicationInstance.body}
-            </g:if>
-            <g:else>
-              <p>${publicationInstance.description}</p>
-            </g:else>
+            ${publicationInstance.body ?: publicationInstance.description}
     </body>
 </html>
