@@ -15,6 +15,10 @@ class UrlMappings {
             controller = "publication"
             action = "publishing"
         }
+        "/p/$slug"{
+            controller = "publication"
+            action = "show"
+        }
         "/about-us"{
             controller = "home"
             action = "family"

@@ -25,21 +25,31 @@ class PublicationController {
 		def image = request.getFile('image')
 		def pdf = request.getFile('pdf')
         def tags = params.tags.split(", ") as List
-        publicationInstance.pdfName = "https://inkleinations.s3.amazonaws.com/pdfs/publications/${pdf.originalFilename}"
-        publicationInstance.imageName = "https://inkleinations.s3.amazonaws.com/images/publication-thumbnails/${image.originalFilename}"
-        if (image.empty || pdf.empty || !publicationInstance.save(flush: true)) {
+
+        if(!pdf.isEmpty()){
+          publicationInstance.pdfName = "https://inkleinations.s3.amazonaws.com/pdfs/publications/${pdf.originalFilename}"
+        }
+        if(!image.isEmpty()){
+          publicationInstance.imageName = "https://inkleinations.s3.amazonaws.com/images/publication-thumbnails/${image.originalFilename}"
+        }
+
+        if(!publicationInstance.save(flush: true)) {
             render(view: "create", model: [publicationInstance: publicationInstance])
             return
         }
 
-        image.inputStream.s3upload(image.originalFilename) {
+        if(!image.isEmpty()){
+          image.inputStream.s3upload(image.originalFilename) {
             bucket "inkleinations"
             path "images/publication-thumbnails"
+          }
         }
 
-        pdf.inputStream.s3upload(pdf.originalFilename) {
+        if(!pdf.isEmpty()){
+          pdf.inputStream.s3upload(pdf.originalFilename) {
             bucket "inkleinations"
             path "pdfs/publications"
+          }
         }
 
         publicationInstance.setTags(tags)
@@ -51,10 +61,9 @@ class PublicationController {
     }
 
     def show() {
-        def publicationInstance = Publication.get(params.id)
+        def publicationInstance = params.slug ? Publication.findBySlug(params.slug) : Publication.get(params.id)
         if (!publicationInstance) {
-			flash.message = message(code: 'default.not.found.message', args: [message(code: 'publication.label', default: 'Publication'), params.id])
-            redirect(action: "list")
+            redirect(action: "publishing")
             return
         }
 

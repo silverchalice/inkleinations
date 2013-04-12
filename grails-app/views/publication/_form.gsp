@@ -24,6 +24,14 @@
 	<g:textArea name="description" cols="40" rows="5" maxlength="50000" value="${publicationInstance?.description}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: publicationInstance, field: 'body', 'error')} ">
+	<label for="body">
+		<g:message code="publication.body.label" default="Body" />
+		
+	</label>
+	<g:textArea name="body" cols="40" rows="5" maxlength="5000000000000000000000000000000000000" value="${publicationInstance?.body}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: publicationInstance, field: 'pages', 'error')} required">
 	<label for="pages">
 		<g:message code="publication.pages.label" default="Pages" />
@@ -61,5 +69,13 @@
 		<g:message code="publication.tags.label" default="Tags" />
 	</label>
 	<g:textField name="tags" value="${publicationTags ?: ''}"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: publicationInstance, field: 'slug', 'error')} ">
+	<label for="slug">
+		<g:message code="publication.slug.label" default="Slug" />
+		
+	</label>
+	<g:textField name="slug" value="${publicationInstance?.slug}"/>
 </div>
 
