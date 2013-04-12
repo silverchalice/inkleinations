@@ -21,7 +21,7 @@
                             <g:if test="${publicationInstance.pdfName}"><a href="${publicationInstance.pdfName}"><img height="269" width="180" border="0" src="${publicationInstance.imageName}" class="thumbnail"></a></g:if>
                             <g:else><img height="269" width="180" border="0" src="${publicationInstance.imageName}" class="thumbnail"></g:else>
                         </td>
-                        <td><p><a href="${publicationInstance.pdfName}"><strong>${publicationInstance.title}</strong></a> <br /> <small>${publicationInstance.author}</small><br /></p>
+                        <td><p>By ${publicationInstance.author}.<br /></p>
                             <br />
                             ${publicationInstance.pages} ${publicationInstance.pages > 1 ? "pages" : "page"}.<g:if test="${publicationInstance.pdfName}"> <a href="${publicationInstance.pdfName}"><button>Download</button></a></g:if><g:else> <g:link controller="home" action="contact" params="['subject':publicationInstance.title]"><button>Request copy</button></g:link></g:else></p>
                             <p>Tags: <g:each in="${publicationInstance.tags}" var="tag" status="i"><g:link controller='publication' action='publishing' params='[tag: "${tag}"]'>${tag}</g:link>${i == (publicationInstance.tags.size() - 1) ? '' : ', '}</g:each></p>
