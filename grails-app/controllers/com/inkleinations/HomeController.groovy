@@ -38,6 +38,7 @@ class HomeController {
         def somethingWentWrong = false
         def firstValue = Math.floor(Math.random() * 9).round() + 1
         def secondValue = Math.floor(Math.random() * 9).round() + 1
+        def emailSent = false
         def dateFormat = "EEEE, MMMM d, yyyy, 'at' h:mm a"
         EmailValidator emailValidator = EmailValidator.getInstance() 
 
@@ -47,9 +48,10 @@ class HomeController {
                     to "daveanddebklein@yahoo.com"
                     from "inKLEINations.com <inkleinationswebservant@gmail.com>"
                     bcc "ben@silver-chalice.com"
-                    subject params.subject ? "[inKLEINations.com] ${params.subject}" : "[inKLEINations.com] Unspecified message"
+                    subject params.subject ? "[inKLEINations] ${params.subject}" : "[inKLEINations] Unspecified message"
                     html "<p>On ${g.formatDate(date:new Date(), format: dateFormat)}, ${params.email} said:</p> <p>-----------------------------------------------------------</p> ${params.message.encodeAsHTML()} <p>------------------------------------------------------------</p><p>This is an automated message. Please do not reply to this email. If you need additional help, visit <a href='http://www.apple.com/support/appleid/'>Apple Support</a>.</p>"
                  }
+                 emailSent = true
                  msg = "Thank you! Your message has been sent."
             } else if(!params.email){
                 somethingWentWrong = true
@@ -71,10 +73,8 @@ class HomeController {
              email: params.email ?: "", subject: params.subject ?: "",
              message: params.message ?: ""]
         } else {
-            [msg: msg, firstValue: firstValue, secondValue: secondValue]
+            [msg: msg, firstValue: firstValue, secondValue: secondValue, subject: emailSent ? '' : params.subject ?: '']
         }
-
-        [firstValue: firstValue, secondValue: secondValue, subject: params.subject ?: '']
     }
 
 }
