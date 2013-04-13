@@ -74,7 +74,7 @@ class HomeController {
             [msg: msg, firstValue: firstValue, secondValue: secondValue]
         }
 
-        [subject: params.subject ?: '']
+        [firstValue: firstValue, secondValue: secondValue, subject: params.subject ?: '']
     }
 
 }
