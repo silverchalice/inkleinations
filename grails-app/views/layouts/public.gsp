@@ -46,7 +46,7 @@ Released   : 20120818
 		</ul>
 	</div>
 	<div id="logo" class="container">
-		<h1><a href="#"><section:content for="header" /> </a></h1>
+		<h1><a href="/"><section:content for="header" /> </a></h1>
         <p><section:content for="subheader" /></p>
 	</div>
 	<div id="page" class="container">
