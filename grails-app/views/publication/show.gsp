@@ -37,12 +37,12 @@
             </g:else>
             <br />
             
+            <p>${publicationInstance.description}</p>
+
             <g:if test="${publicationInstance.body?.size() > 0}">
+              <br />
               ${publicationInstance.body}
             </g:if>
-            <g:else>
-              <p>${publicationInstance.description}</p>
-            </g:else>
             
     </body>
 </html>
