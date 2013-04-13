@@ -36,13 +36,11 @@
               <p><strong>We can not currently offer this publication in PDF form. Please <g:link controller="home" action="contact" params="['subject':publicationInstance.title]">contact us</g:link> to request a paper copy.</strong></p>
             </g:else>
             <br />
-            
-            <p>${publicationInstance.description}</p>
-
             <g:if test="${publicationInstance.body?.size() > 0}">
-              <br />
               ${publicationInstance.body}
             </g:if>
-            
+            <g:else>
+              <p>${publicationInstance.description}</p>
+            </g:else>
     </body>
 </html>
