@@ -33,6 +33,8 @@ class HomeController {
 
     def conference_sessions() { }
 
+    def events() { }
+
     def contact() {
         def msg = null
         def somethingWentWrong = false

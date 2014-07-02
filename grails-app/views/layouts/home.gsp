@@ -32,7 +32,7 @@ Released   : 20120818
 			<li><a href="http://blog.inkleinations.com">Blog</a></li>
 			<li><g:link controller="publication" action="publishing">Publishing</g:link></li>
 			<li><g:link controller="home" action="audio">Audio</g:link></li>
-			<li><g:link controller="home" action="conference_sessions">Sessions</g:link></li>
+			<li><g:link controller="home" action="events">Events</g:link></li>
 			<li><g:link controller="home" action="links">Links</g:link></li>
 			<li><g:link controller="home" action="contact">Contact</g:link></li>
 		</ul>
