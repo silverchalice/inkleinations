@@ -4,6 +4,17 @@ class BootStrap {
 
     def init = { servletContext ->
 
+        if(!Section.findByName("events"){
+            new Section(name:"events", html:"<h3><a style="text-decoration:underline;" href="mailto:daveanddebklein@yahoo.com?Subject=Reasons%20For%20Hope%20event%20at%20Family%20Vision%20Library">Register for Reasons For Hope event at Family Vision Library</a> (September 12&#8211;13)</h3>").save(failOnError:true)
+        }
+        if(!User.findByUsername('adminiii')){
+            def adminRole = Role.findByAuthority('ROLE_ADMIN')
+            def adminUser2 = new User(username: 'adminiii', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, password: 'password071985')
+            adminUser2.save(flush: true, failOnError:true)
+
+            UserRole.create adminUser2, adminRole, true
+        }
+
         if(!Section.findByName("subheader")){
             def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true, failOnError:true)
             def adminUser = new User(username: 'admini', enabled: true, accountExpired: false, accountLocked: false, passwordExpired: false, password: 'password')
