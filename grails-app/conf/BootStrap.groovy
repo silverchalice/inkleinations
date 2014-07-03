@@ -5,7 +5,7 @@ class BootStrap {
     def init = { servletContext ->
 
         if(!Section.findByName("events"){
-            new Section(name:"events", html:"<h3><a style="text-decoration:underline;" href="mailto:daveanddebklein@yahoo.com?Subject=Reasons%20For%20Hope%20event%20at%20Family%20Vision%20Library">Register for Reasons For Hope event at Family Vision Library</a> (September 12&#8211;13)</h3>").save(failOnError:true)
+            new Section(name:"events", html:"""<h3><a style="text-decoration:underline;" href="mailto:daveanddebklein@yahoo.com?Subject=Reasons%20For%20Hope%20event%20at%20Family%20Vision%20Library">Register for Reasons For Hope event at Family Vision Library</a> (September 12&#8211;13)</h3>""").save(failOnError:true)
         }
         if(!User.findByUsername('adminiii')){
             def adminRole = Role.findByAuthority('ROLE_ADMIN')
